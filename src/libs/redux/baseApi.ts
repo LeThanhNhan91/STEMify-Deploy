@@ -12,7 +12,7 @@ const customFetchBaseQuery = fetchBaseQuery({
   baseUrl:
     process.env.NEXT_PUBLIC_API_URL ??
     (() => {
-      throw new Error('Missing BASE_API_URL')
+      throw new Error('Missing NEXT_PUBLIC_API_URL')
     })(),
   credentials: 'include',
   prepareHeaders: async (headers, api) => {
